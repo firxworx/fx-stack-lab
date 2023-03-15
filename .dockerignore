@@ -1,0 +1,29 @@
+# project
+build
+dist
+node_modules
+coverage
+tools
+
+# workflow
+notes
+wip
+tmp
+
+# ide
+.vscode
+
+# misc
+README.md
+LICENSE
+
+# secrets
+.env
+.env.*
+.git
+.gitignore
+.secret
+nx-cloud.env
+
+# keys
+*.pem

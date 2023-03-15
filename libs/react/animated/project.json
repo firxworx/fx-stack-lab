@@ -1,0 +1,43 @@
+{
+  "name": "react-animated",
+  "sourceRoot": "libs/react/animated/src",
+  "projectType": "library",
+  "tags": ["publish:public"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/react/animated/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "build": {
+      "executor": "@nrwl/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/react/animated",
+        "tsConfig": "libs/react/animated/tsconfig.lib.json",
+        "project": "libs/react/animated/package.json",
+        "entryFile": "libs/react/animated/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/react/animated/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/react/animated/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

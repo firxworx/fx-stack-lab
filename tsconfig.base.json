@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "alwaysStrict": true,
+    "target": "es2022",
+    "module": "es2022",
+    "lib": ["es2022", "dom"],
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "strictNullChecks": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "importsNotUsedAsValues": "error",
+    "baseUrl": ".",
+    "paths": {
+      "@firx/react-animated": ["libs/react/animated/src/index.ts"],
+      "@firx/react-hooks": ["libs/react/hooks/src/index.ts"],
+      "@firx/react-modals": ["libs/react/modals/src/index.ts"],
+      "@firx/react-notifications": ["libs/react/notifications/src/index.ts"],
+      "@firx/react/spinners": ["libs/react/spinners/src/index.ts"],
+      "@firx/type/tools": ["libs/type/tools/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp", "wip"]
+}

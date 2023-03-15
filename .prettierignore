@@ -1,0 +1,11 @@
+# patterns for prettier code formatter to ignore
+
+/build
+/dist
+/coverage
+/node_modules
+/**/.next
+/notes
+/tmp
+/wip
+pnpm-lock.yaml

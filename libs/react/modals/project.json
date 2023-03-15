@@ -1,0 +1,43 @@
+{
+  "name": "react-modals",
+  "sourceRoot": "libs/react/modals/src",
+  "projectType": "library",
+  "tags": ["publish:public"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/react/modals/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "build": {
+      "executor": "@nrwl/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/react/modals",
+        "tsConfig": "libs/react/modals/tsconfig.lib.json",
+        "project": "libs/react/modals/package.json",
+        "entryFile": "libs/react/modals/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/react/modals/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/react/modals/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "type-tools",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/type/tools/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/type/tools/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/type/tools/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/type/tools",
+        "tsConfig": "libs/type/tools/tsconfig.lib.json",
+        "packageJson": "libs/type/tools/package.json",
+        "main": "libs/type/tools/src/index.ts",
+        "assets": ["libs/type/tools/*.md"]
+      }
+    }
+  },
+  "tags": ["publish:public"]
+}

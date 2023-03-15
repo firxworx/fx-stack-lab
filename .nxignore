@@ -1,0 +1,25 @@
+# project
+.next
+node_modules
+
+# macos
+.DS_Store
+
+# ide's & editors
+.idea
+_.sublime-project
+_.sublime-workspace
+.vscode/\*_/_
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/\*.code-snippets
+
+# yarn 3
+.yarn/\*
+.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

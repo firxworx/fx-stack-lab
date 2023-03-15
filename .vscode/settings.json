@@ -1,0 +1,10 @@
+{
+  // "[sql]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "mtxr.sqltools"
+  // },
+  // "sqltools.format": {
+  //   "linesBetweenQueries": "preserve",
+  //   "reservedWordCase": "null",
+  // }
+}
