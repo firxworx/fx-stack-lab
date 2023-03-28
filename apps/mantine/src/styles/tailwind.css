@@ -1,0 +1,3 @@
+/* @tailwind base; // disable for mantine */
+@tailwind components;
+@tailwind utilities;

@@ -15,6 +15,9 @@ dist
 build
 /out-tsc
 
+# aws-cdk synthesized output
+cdk.out
+
 # database
 # /database/dumps
 

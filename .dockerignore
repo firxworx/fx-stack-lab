@@ -4,6 +4,7 @@ dist
 node_modules
 coverage
 tools
+cdk.out
 
 # workflow
 notes

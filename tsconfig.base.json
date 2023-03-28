@@ -20,7 +20,7 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "strictNullChecks": true,
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
@@ -31,12 +31,18 @@
     "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
+      "@firx/cdk-toolbox": ["libs/cdk/toolbox/src/index.ts"],
+      "@firx/react-3d-buddy": ["libs/react-3d/buddy/src/index.ts"],
       "@firx/react-animated": ["libs/react/animated/src/index.ts"],
+      "@firx/react-formik": ["libs/react/formik/src/index.ts"],
       "@firx/react-hooks": ["libs/react/hooks/src/index.ts"],
+      "@firx/react-layouts": ["libs/react/layouts/src/index.ts"],
       "@firx/react-modals": ["libs/react/modals/src/index.ts"],
       "@firx/react-notifications": ["libs/react/notifications/src/index.ts"],
+      "@firx/react-xstate-forms": ["libs/react-experiments/xstate-forms/src/index.ts"],
       "@firx/react/spinners": ["libs/react/spinners/src/index.ts"],
-      "@firx/type/tools": ["libs/type/tools/src/index.ts"]
+      "@firx/type/tools": ["libs/type/tools/src/index.ts"],
+      "@firx/typescript-tools": ["libs/common/typescript-tools/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp", "wip"]
